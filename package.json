@@ -4,18 +4,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:scripts": "swc src --out-dir dist --copy-files",
-    "build": "pnpm run build:scripts && node dist/scripts/build-html.js && tailwindcss -i ./src/styles.css -o ./public/styles.css",
-    "dev": "pnpm run build:scripts && node dist/scripts/dev_server.js"
+    "build:scripts": "rimraf dist && swc src --out-dir dist --copy-files --strip-leading-paths",
+    "build": "pnpm run build:scripts && node dist/scripts/build-project.js && tailwindcss -i ./src/styles.css -o ./public/styles.css",
+    "dev": "pnpm run build:scripts && node dist/scripts/dev-server.js"
   },
   "devDependencies": {
     "@swc/cli": "^0.7.3",
     "@swc/core": "^1.11.21",
     "@tailwindcss/cli": "^4.1.4",
     "@types/node": "^22.14.1",
+    "@types/ws": "^8.18.1",
     "@typescript-eslint/eslint-plugin": "^8.31.0",
     "@typescript-eslint/parser": "^8.31.0",
     "autoprefixer": "^10.4.21",
+    "chokidar": "^4.0.3",
     "concurrently": "^9.1.2",
     "eslint": "^9.25.1",
     "eslint-config-prettier": "^10.1.2",
@@ -23,13 +25,14 @@
     "eslint-plugin-prettier": "^5.2.6",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "nodemon": "^3.1.10",
     "postcss": "^8.5.3",
     "preact": "^10.26.5",
     "preact-render-to-string": "^6.5.13",
     "prettier": "^3.5.3",
+    "rimraf": "^6.0.0",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
-    "wrangler": "^4.12.1"
+    "wrangler": "^4.12.1",
+    "ws": "^8.18.1"
   }
 }

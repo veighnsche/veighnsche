@@ -1,4 +1,3 @@
-
 export function App() {
   return (
     <html lang="en">
@@ -9,10 +8,10 @@ export function App() {
       </head>
       <body>
         <main class="min-h-screen bg-background text-foreground">
-          <h1 class="text-4xl font-bold">Hello, I’m Veighnsche</h1>
+          <h1 class="text-4xl font-bold">Hello, I’m Vince</h1>
           <p>This is my one-page site.</p>
         </main>
       </body>
     </html>
-  );
+  )
 }
