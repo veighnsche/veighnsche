@@ -1,1 +1,5 @@
-node_modules
+node_modules/
+public/styles.css
+public/index.html
+dist
+.wrangler
