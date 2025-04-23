@@ -2,7 +2,9 @@
   "jsc": {
     "parser": {
       "syntax": "typescript",
-      "tsx": true
+      "tsx": true,
+      "decorators": false,
+      "dynamicImport": true
     },
     "transform": {
       "react": {
@@ -10,9 +12,13 @@
         "importSource": "preact"
       }
     },
-    "target": "es2020"
+    "target": "es2020",
+    "externalHelpers": false
   },
   "module": {
-    "type": "es6"
-  }
+    "type": "nodenext",
+    "strict": true
+  },
+  "sourceMaps": false,
+  "exclude": ["node_modules", "public", "dist"]
 }

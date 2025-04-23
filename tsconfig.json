@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "lib": ["DOM", "ES2020"],
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
@@ -11,7 +11,10 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "moduleDetection": "force",
+    "resolveJsonModule": true
   },
-  "include": ["src", "src/scripts"]
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"]
 }
