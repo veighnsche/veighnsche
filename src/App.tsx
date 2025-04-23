@@ -5,11 +5,12 @@ export function App() {
         <meta charset="UTF-8" />
         <title>Veighnsche</title>
         <link href="/styles.css" rel="stylesheet" />
+        <link rel="icon" type="image/png" href="favicon/favicon.ico" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
       <body>
-        <main class="min-h-screen bg-background text-foreground">
-          <h1 class="text-4xl font-bold">Hello, I’m Vince</h1>
-          <p>This is my one-page site.</p>
+        <main class="min-h-screen flex items-center justify-center bg-background text-foreground">
+          <img src="/images/logo.png" alt="Logo" class="max-w-xs w-full h-auto" />
         </main>
       </body>
     </html>
