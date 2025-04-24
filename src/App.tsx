@@ -9,8 +9,24 @@ export function App() {
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
       <body>
-        <main class="min-h-screen flex items-center justify-center bg-background text-foreground">
-          <img src="/images/logo.png" alt="Logo" class="max-w-xs w-full h-auto" />
+        <main className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground">
+          <div className="flex flex-wrap justify-center items-center">
+            {[
+              '/images/logo.png',
+              ...Array.from(
+                { length: 31 },
+                (_, i) => `/images/logo_${String(i + 1).padStart(5, '0')}_.png`
+              ),
+            ].map((src, idx) => (
+              <img
+                key={src}
+                src={src}
+                alt={`Image ${idx === 0 ? 'Logo' : idx}`}
+                className="max-w-xs w-full h-auto"
+                style={{ maxWidth: 200, margin: 4 }}
+              />
+            ))}
+          </div>
         </main>
       </body>
     </html>
