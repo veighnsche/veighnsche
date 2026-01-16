@@ -1,7 +1,0 @@
-node_modules/
-public/styles.css
-public/index.html
-dist
-.wrangler
-public/script.js
-public/script.js.map
