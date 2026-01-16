@@ -2,20 +2,36 @@
 
 This repository hosts the README shown on my GitHub profile.
 
+## Developer Profile
+
+<!-- TEAM_007: Added developer profile and project analysis -->
+I’m a systems‑first builder focused on **safety, determinism, and autonomy** across OS tooling, AI infrastructure, and device‑level platforms. My work pairs deep systems engineering (Rust/Go, kernel/virtualization, packaging) with AI‑assisted workflows that stay auditable and reversible.
+
+**Core strengths**
+- Systems architecture with strong safety/rollback primitives
+- Linux distro + package engineering, immutable workflows, and build pipelines
+- AI infrastructure that is self‑hosted, offline‑capable, and composable
+- Device‑level security/virtualization (Android kernels, AVF, microVMs)
+
+**Typical stack**
+- Rust, Go, Python, TypeScript
+- Linux / Nix / Fedora Atomic / Arch
+- Containers, microVMs, QEMU, ADB/fastboot
+
+## Project Analysis
+
+Across the projects below, the through‑line is **intentional automation with guardrails**—build systems and infra that are powerful but always reversible.
+
+- **Safety‑first system mutation**: Switchyard‑fs and oxidizr‑arch show a consistent pattern of atomic changes, policy gates, and rollback.
+- **Self‑hosted AI infrastructure**: rbee emphasizes orchestration, multi‑GPU scheduling, and OpenAI‑compatible APIs without cloud lock‑in.
+- **OS‑level product building**: LevitateOS and Tanzanite combine distro engineering with developer‑first ergonomics and offline workflows.
+- **Device‑scale isolation & control**: sovereign‑vault and android‑root apply kernel/AVF foundations plus tooling to safely control Android hosts.
+- **Developer experience tooling**: cukerust and qemu‑screenshot‑mcp focus on tight feedback loops and agent‑friendly interfaces.
+
 ## Projects
 
-- **[LevitateOS](https://github.com/LevitateOS/LevitateOS)** — AI-assisted Fedora-based distro + offline-first packaging experiments.
-- **[sovereign-vault](https://github.com/veighnsche/sovereign-vault)** — Pixel 6 “protected services” project: custom Android kernel + AVF microVMs to run Forgejo/Vaultwarden with stronger isolation.
-- **[Tanzanite](https://github.com/veighnsche/Tanzanite)** — Pre-configured developer workstation image (Aurora/uBlue via BlueBuild) with COSMIC + batteries-included toolchains.
-- **[tenxten](https://github.com/veighnsche/tenxten)** — Proving ground / certification platform for “10x before AI × 10x with AI = 100x”.
-- **[rbee](https://github.com/rbee-keeper/rbee)** — “Private AI cloud in one command”: unify all your GPUs (local + remote) under one OpenAI-compatible API + interface. ([rbee.dev](https://rbee.dev/))
-- **[cond8/core](https://github.com/Cond8/core)** — Structured AI “text-to-workflow” engine for TypeScript: compose observable actors/directors into testable pipelines. ([cond8.dev](https://cond8.dev/), [app](https://app.cond8.dev/))
-- **[nixos-ram-tmp-lru](https://github.com/veighnsche/nixos-ram-tmp-lru)** — NixOS module: mount `/tmp` as tmpfs + systemd timer that evicts LRU entries when tmpfs is close to full.
-
-## Project notes
-
 <details>
-<summary><strong>LevitateOS — AI-assisted Linux distribution + offline package building</strong></summary>
+<summary><strong><a href="https://github.com/LevitateOS/LevitateOS">LevitateOS</a> — AI-assisted Linux distribution + offline package building</strong></summary>
 
 ### What it is
 
@@ -46,10 +62,14 @@ Instead of relying on an online package repository, the package manager is meant
 
 The goal is that packages become inspectable and editable “recipes”, and the system can construct them locally rather than pulling opaque binaries from a remote repository.
 
+### Links
+
+- https://github.com/LevitateOS/LevitateOS
+
 </details>
 
 <details>
-<summary><strong>sovereign-vault — hosting Forgejo/Vaultwarden on a Pixel 6 via AVF microVMs</strong></summary>
+<summary><strong><a href="https://github.com/veighnsche/sovereign-vault">sovereign-vault</a> — hosting Forgejo/Vaultwarden on a Pixel 6 via AVF microVMs</strong></summary>
 
 ### What it is
 
@@ -75,10 +95,14 @@ Expose “desktop Linux capability” through a **safe, intentional API surface*
 
 The repo describes the project as largely working (~80%), with remaining work focused on service integration and networking/access simplification.
 
+### Links
+
+- https://github.com/veighnsche/sovereign-vault
+
 </details>
 
 <details>
-<summary><strong>Tanzanite — Aurora (uBlue) developer workstation image</strong></summary>
+<summary><strong><a href="https://github.com/veighnsche/Tanzanite">Tanzanite</a> — Aurora (uBlue) developer workstation image</strong></summary>
 
 ### What it is
 
@@ -95,10 +119,14 @@ Tanzanite is a pre-configured developer workstation image based on **Aurora (Uni
 - Switch from an existing Fedora Atomic system via `bootc switch`
 - Or build/install via ISO releases
 
+### Links
+
+- https://github.com/veighnsche/Tanzanite
+
 </details>
 
 <details>
-<summary><strong>tenxten — proving ground for 10x10 (100x) architects</strong></summary>
+<summary><strong><a href="https://github.com/veighnsche/tenxten">tenxten</a> — proving ground for 10x10 (100x) architects</strong></summary>
 
 ### What it is
 
@@ -118,10 +146,14 @@ AI has made code generation cheap. TENXTEN focuses on what still matters: engine
 - `10x.AUGMENTED` — certification for AI-orchestrated building
 - `100x.PROVEN` — the combined “multiplier” (requires both)
 
+### Links
+
+- https://github.com/veighnsche/tenxten
+
 </details>
 
 <details>
-<summary><strong>nixos-ram-tmp-lru — /tmp tmpfs LRU cleaner module</strong></summary>
+<summary><strong><a href="https://github.com/veighnsche/nixos-ram-tmp-lru">nixos-ram-tmp-lru</a> — /tmp tmpfs LRU cleaner module</strong></summary>
 
 ### What it is
 
@@ -165,10 +197,76 @@ In your top-level `flake.nix`:
   - if usage is at/above ~70%: repeatedly deletes the least-recently-used top-level entries (based on access time) until usage drops to ~50%
 - A systemd timer runs the cleaner periodically after boot
 
+### Links
+
+- https://github.com/veighnsche/nixos-ram-tmp-lru
+
 </details>
 
 <details>
-<summary><strong>rbee — your private AI cloud across all your GPUs</strong></summary>
+<!-- TEAM_003: Added oxidizr-arch project entry -->
+<summary><strong><a href="https://github.com/veighnsche/oxidizr-arch">oxidizr-arch</a> — Arch Linux CLI to use Rust replacements safely</strong></summary>
+
+### What it is
+
+oxidizr-arch is a safety-first CLI that switches key Arch system toolchains to their Rust replacements (uutils coreutils/findutils, sudo-rs) while keeping an atomic, reversible rollback path powered by Switchyard.
+
+### Core approach
+
+- Automatic, guarded switching with `use` / `replace` flows (no manual applet selection)
+- One-step restore back to GNU/stock tools
+- Policy gates, preflight checks, and audit facts via Switchyard
+
+### Links
+
+- https://github.com/veighnsche/oxidizr-arch
+
+</details>
+
+<details>
+<!-- TEAM_005: Added switchyard project entry -->
+<summary><strong><a href="https://github.com/veighnsche/switchyard">switchyard</a> — safe, deterministic engine for atomic system changes</strong></summary>
+
+### What it is
+
+Switchyard-fs is a Rust library that provides an auditable engine for applying system changes with atomic symlink swaps, policy gates, deterministic IDs, rescue verification, and optional smoke checks with auto‑rollback.
+
+### Highlights
+
+- Atomic symlink replacement with backup/restore
+- Preflight policy gates, locking, and rescue verification
+- Structured facts/audit emission with deterministic IDs
+
+### Links
+
+- https://github.com/veighnsche/switchyard
+- https://docs.rs/switchyard-fs
+- https://veighnsche.github.io/switchyard/
+
+</details>
+
+<details>
+<!-- TEAM_006: Added android-root project entry -->
+<summary><strong><a href="https://github.com/veighnsche/android-root">android-root</a> — Android Shell Manager MCP server</strong></summary>
+
+### What it is
+
+Android Shell Manager is an MCP server that manages multi-device Android shells (root or non‑root) with hang detection, background jobs, and AI-friendly status reporting for safe automation.
+
+### Highlights
+
+- Multi-device ADB/fastboot shell management with persistent sessions
+- AI-centric status reporting (UNCERTAIN/WAITING_FOR_INPUT) and hang prevention
+- Batch command execution and background job support
+
+### Links
+
+- https://github.com/veighnsche/android-root
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/rbee-keeper/rbee">rbee</a> — your private AI cloud across all your GPUs</strong></summary>
 
 ### What it is
 
@@ -193,7 +291,7 @@ rbee turns every GPU you own (desktop, laptop, server, remote machines) into a s
 </details>
 
 <details>
-<summary><strong>cond8/core — structured AI text-to-workflow for TypeScript</strong></summary>
+<summary><strong><a href="https://github.com/Cond8/core">cond8/core</a> — structured AI text-to-workflow for TypeScript</strong></summary>
 
 ### What it is
 
@@ -210,6 +308,27 @@ This is designed to make workflows interpretable and verifiable (treating “cod
 - https://cond8.dev/
 - https://github.com/Cond8/core
 - https://app.cond8.dev/
+
+</details>
+
+<details>
+<!-- TEAM_004: Added cukerust project entry -->
+<summary><strong><a href="https://github.com/veighnsche/cukerust">cukerust</a> — Zero‑Config Gherkin × Rust BDD for VS Code</strong></summary>
+
+### What it is
+
+CukeRust is a VS Code extension spec that delivers first‑class Gherkin authoring with Rust step integration. It focuses on zero‑config step discovery, read‑only defaults, and strong diagnostics/definition tooling without auto‑executing project code.
+
+### Highlights
+
+- Static scan step discovery by default (no repo writes, no auto‑exec)
+- Diagnostics for undefined/ambiguous steps with go‑to‑definition and completion
+- Multi‑root aware indexing and run command helpers (opt‑in)
+
+### Links
+
+- https://github.com/veighnsche/cukerust
+- https://marketplace.visualstudio.com/items?itemName=Veighnsche.cukerust
 
 </details>
 

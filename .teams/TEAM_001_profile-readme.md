@@ -17,6 +17,8 @@ Create an initial placeholder `README.md` for the profile repository.
 - Added cond8/core as another project entry with a collapsible Project notes section.
 - Redesigned `README.md` layout: replaced Projects table with a list and removed placeholders.
 - Updated `README.md` title to link to GitHub profile and converted the Projects list to linked project names with inline extra links.
+- Consolidated Projects list into the Projects details blocks (single source of truth) and added missing Links subsections.
+- Updated each project <summary> title to link to the corresponding GitHub repository.
 
 ## Handoff checklist
 
