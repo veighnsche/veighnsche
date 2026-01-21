@@ -1,5 +1,7 @@
 # [veighnsche](https://github.com/veighnsche)
 
+> pronounced: Vinch
+
 <!-- TEAM_007: Added developer profile and project analysis -->
 I’m a systems‑first builder focused on **safety, determinism, and autonomy** across OS tooling, AI infrastructure, and device‑level platforms. My work pairs deep systems engineering (Rust/Go, kernel/virtualization, packaging) with AI‑assisted workflows that stay auditable and reversible.
 
