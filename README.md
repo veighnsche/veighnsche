@@ -7,11 +7,14 @@ I’m a systems‑first builder focused on **safety, determinism, and autonomy**
 
 ## Projects
 
+- 🚀 **[LevitateOS](https://github.com/LevitateOS/LevitateOS)** — Daily driver Linux distribution with AI assistance and offline-first package management
+- 🌰 **[AcornOS](https://github.com/LevitateOS/AcornOS)** — Alpine-based distribution with OpenRC, musl, and busybox
+- 🎮 **[rbee-keeper](https://github.com/rbee-keeper/rbee/tree/main/bin/00_rbee_keeper)** — Thin HTTP client (CLI + Tauri GUI) that manages queen lifecycle
+- 🎭 **[@cond8/core](https://github.com/Cond8/core/tree/main/core)** — TypeScript workflow framework with actor-director architecture
 - 🏗️ **[distro-builder](https://github.com/LevitateOS/distro-builder)** — Shared component system and build abstractions for ISO creation
 - 📋 **[distro-spec](https://github.com/LevitateOS/distro-spec)** — Constants for boot entries, partition layouts, user specs, and service management
 - 💿 **[leviso](https://github.com/LevitateOS/leviso)** — Downloads Rocky Linux, extracts packages, builds bootable UEFI ISO with EROFS rootfs
 - 🔗 **[leviso-elf](https://github.com/LevitateOS/leviso-elf)** — Analyzes ELF binaries and copies library dependencies using readelf
-- 🌰 **[AcornOS](https://github.com/LevitateOS/AcornOS)** — Alpine-based distribution with OpenRC, musl, and busybox
 - 📦 **[recipe](https://github.com/LevitateOS/recipe)** — Package manager where recipes are executable Rhai scripts with state in the files
 - 📥 **[recstrap](https://github.com/LevitateOS/recstrap)** — Extracts EROFS/squashfs to target directory with 14 safety checks
 - 📄 **[recfstab](https://github.com/LevitateOS/recfstab)** — Generates fstab entries from mounted filesystems
@@ -30,8 +33,6 @@ I’m a systems‑first builder focused on **safety, determinism, and autonomy**
 - 📚 **[docs/content](https://github.com/LevitateOS/docs-content)** — Structured documentation content library consumed by website and TUI
 - 🖼️ **[docs/tui](https://github.com/LevitateOS/docs-tui)** — Terminal UI documentation viewer with Ink-based rendering
 - 🤖 **[llm-toolkit](https://github.com/LevitateOS/llm-toolkit)** — LoRA fine-tuning scripts for training, inference, and evaluation
-- 🐧 **[linux](https://github.com/LevitateOS/linux)** — Linux kernel source (submodule)
-- 🎮 **[rbee-keeper](https://github.com/rbee-keeper/rbee/tree/main/bin/00_rbee_keeper)** — Thin HTTP client (CLI + Tauri GUI) that manages queen lifecycle
 - 👑 **[queen-rbee](https://github.com/rbee-keeper/rbee/tree/main/bin/10_queen_rbee)** — Brain daemon with job-based architecture that routes to hives
 - 🏠 **[rbee-hive](https://github.com/rbee-keeper/rbee/tree/main/bin/20_rbee_hive)** — Worker manager daemon that spawns workers and manages models per machine
 - 💬 **[llm-worker-rbee](https://github.com/rbee-keeper/rbee/tree/main/bin/30_llm_worker_rbee)** — LLM inference worker with llama.cpp backend (CUDA/Metal/CPU)
@@ -63,7 +64,6 @@ I’m a systems‑first builder focused on **safety, determinism, and autonomy**
 - 📜 **[contracts](https://github.com/rbee-keeper/rbee/tree/main/bin/97_contracts)** — Shared type definitions
 - 🔒 **[security-crates](https://github.com/rbee-keeper/rbee/tree/main/bin/98_security_crates)** — Auth, audit, and input validation crates
 - 🌍 **[global-worker-catalog](https://github.com/rbee-keeper/rbee/tree/main/bin/80-global-worker-catalog)** — Cross-hive worker registry
-- 🎭 **[@cond8/core](https://github.com/Cond8/core/tree/main/core)** — TypeScript workflow framework with actor-director architecture
 - 🌐 **[browser-environment](https://github.com/Cond8/core/tree/main/browser-environment)** — React + Vite web app with Monaco editor and AI chat
 - ☁️ **[VHX-starterkit](https://github.com/Cond8/core/tree/main/VHX-starterkit)** — Cloudflare Workers template with Hono + Preact SSR
 - 🏰 **[sovereign-vault](https://github.com/veighnsche/sovereign-vault)** — Self-hosts Forgejo/Vaultwarden on Pixel 6 via AVF microVMs
