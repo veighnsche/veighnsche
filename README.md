@@ -7,7 +7,7 @@ I’m a systems‑first builder focused on **safety, determinism, and autonomy**
 
 ## Projects
 
-- 🚀 **[LevitateOS](https://github.com/LevitateOS/LevitateOS)** — Daily driver Linux distribution with AI assistance and offline-first package management
+- 🚀 **[LevitateOS](https://github.com/LevitateOS/LevitateOS)** — Daily driver Linux distro where you make your own package repo
 - 🌰 **[AcornOS](https://github.com/LevitateOS/AcornOS)** — Alpine-based distribution with OpenRC, musl, and busybox
 - 🎮 **[rbee-keeper](https://github.com/rbee-keeper/rbee/tree/main/bin/00_rbee_keeper)** — Thin HTTP client (CLI + Tauri GUI) that manages queen lifecycle
 - 🎭 **[@cond8/core](https://github.com/Cond8/core/tree/main/core)** — TypeScript workflow framework with actor-director architecture
