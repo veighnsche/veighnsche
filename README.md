@@ -5,27 +5,6 @@
 <!-- TEAM_007: Added developer profile and project analysis -->
 I’m a systems‑first builder focused on **safety, determinism, and autonomy** across OS tooling, AI infrastructure, and device‑level platforms. My work pairs deep systems engineering (Rust/Go, kernel/virtualization, packaging) with AI‑assisted workflows that stay auditable and reversible.
 
-**Core strengths**
-- Systems architecture with strong safety/rollback primitives
-- Linux distro + package engineering, immutable workflows, and build pipelines
-- AI infrastructure that is self‑hosted, offline‑capable, and composable
-- Device‑level security/virtualization (Android kernels, AVF, microVMs)
-
-**Typical stack**
-- Rust, Go, Python, TypeScript
-- Linux / Nix / Fedora Atomic / Arch
-- Containers, microVMs, QEMU, ADB/fastboot
-
-## Project Analysis
-
-Across the projects below, the through‑line is **intentional automation with guardrails**—build systems and infra that are powerful but always reversible.
-
-- **Safety‑first system mutation**: Switchyard‑fs and oxidizr‑arch show a consistent pattern of atomic changes, policy gates, and rollback.
-- **Self‑hosted AI infrastructure**: rbee emphasizes orchestration, multi‑GPU scheduling, and OpenAI‑compatible APIs without cloud lock‑in.
-- **OS‑level product building**: LevitateOS and Tanzanite combine distro engineering with developer‑first ergonomics and offline workflows.
-- **Device‑scale isolation & control**: sovereign‑vault and android‑root apply kernel/AVF foundations plus tooling to safely control Android hosts.
-- **Developer experience tooling**: cukerust and qemu‑screenshot‑mcp focus on tight feedback loops and agent‑friendly interfaces.
-
 ## Projects
 
 - 🏗️ **[distro-builder](https://github.com/LevitateOS/distro-builder)** — Shared component system and build abstractions for ISO creation
@@ -96,11 +75,26 @@ Across the projects below, the through‑line is **intentional automation with g
 - 🤖 **[android-root](https://github.com/veighnsche/android-root)** — MCP server for multi-device Android shells with hang detection
 - 🥒 **[cukerust](https://github.com/veighnsche/cukerust)** — Zero-config Gherkin × Rust BDD extension for VS Code
 
-## What you’ll find here
+**Core strengths**
+- Systems architecture with strong safety/rollback primitives
+- Linux distro + package engineering, immutable workflows, and build pipelines
+- AI infrastructure that is self‑hosted, offline‑capable, and composable
+- Device‑level security/virtualization (Android kernels, AVF, microVMs)
 
-- Short descriptions of projects
-- Links to repositories and demos
-- Notes on tools, prompts, and learnings
+**Typical stack**
+- Rust, Go, Python, TypeScript
+- Linux / Nix / Fedora Atomic / Arch
+- Containers, microVMs, QEMU, ADB/fastboot
+
+## Project Analysis
+
+Across the projects below, the through‑line is **intentional automation with guardrails**—build systems and infra that are powerful but always reversible.
+
+- **Safety‑first system mutation**: Switchyard‑fs and oxidizr‑arch show a consistent pattern of atomic changes, policy gates, and rollback.
+- **Self‑hosted AI infrastructure**: rbee emphasizes orchestration, multi‑GPU scheduling, and OpenAI‑compatible APIs without cloud lock‑in.
+- **OS‑level product building**: LevitateOS and Tanzanite combine distro engineering with developer‑first ergonomics and offline workflows.
+- **Device‑scale isolation & control**: sovereign‑vault and android‑root apply kernel/AVF foundations plus tooling to safely control Android hosts.
+- **Developer experience tooling**: cukerust and qemu‑screenshot‑mcp focus on tight feedback loops and agent‑friendly interfaces.
 
 ## Contact
 
