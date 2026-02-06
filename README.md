@@ -7,6 +7,7 @@ I’m a systems‑first builder focused on **safety, determinism, and autonomy**
 
 ## Projects
 
+- 🤖 **[ralph4days](https://github.com/veighnsche/ralph4days)** — Tauri app for multi-agent build loops running Claude Haiku in a loop to complete PRD-defined tasks
 - 🚀 **[LevitateOS](https://github.com/LevitateOS/LevitateOS)** — Daily driver Linux distro where you make your own package repo
 - 🌰 **[AcornOS](https://github.com/LevitateOS/AcornOS)** — Alpine-based distribution with OpenRC, musl, and busybox
 - 🎮 **[rbee-keeper](https://github.com/rbee-keeper/rbee/tree/main/bin/00_rbee_keeper)** — Thin HTTP client (CLI + Tauri GUI) that manages queen lifecycle
