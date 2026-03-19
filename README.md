@@ -7,10 +7,16 @@ I’m a systems‑first builder focused on **safety, determinism, and autonomy**
 
 ## Projects
 
-- 🤖 **[ralph4days](https://github.com/veighnsche/ralph4days)** — Tauri app for agent build loops running Claude Code in a loop to complete tasks
-- 🚀 **[LevitateOS](https://github.com/LevitateOS/LevitateOS)** — Daily driver Linux distro where you make your own package repo
+- 🚀 **[LevitateOS](https://github.com/LevitateOS/LevitateOS)** — Linux distro with Rhai packaging, local AI, and atomic A/B updates.
+- 📱 **[Pocket-Relay](https://github.com/veighnsche/Pocket-Relay)** — Flutter phone client for remote Codex sessions over SSH.
+- 🤖 **[ralph4days](https://github.com/veighnsche/ralph4days)** — Tauri workspace for Claude tasks, prompts, and terminal execution.
+- 🎮 **[rbee-keeper](https://github.com/rbee-keeper/rbee/tree/main/bin/00_rbee_keeper)** — Thin CLI and GUI for queen-rbee lifecycle and inference control.
+- 🖥️ **[ewtb](https://github.com/veighnsche/ewtb)** — Wall dashboard for agenda, weather, news, and host health.
+- 🎙️ **[voxy](https://github.com/veighnsche/voxy)** — GTK4 desktop app for live microphone transcription with OpenAI Realtime.
+- 📅 **[calendar](https://github.com/veighnsche/calendar)** — Go API that makes Radicale CalDAV writable through stable JSON.
+- 📦 **[recipes](https://github.com/veighnsche/recipes)** — LevitateOS Rhai recipes for repeatable workstation and driver setup.
+- 🔀 **[recipes-hevel](https://github.com/veighnsche/recipes-hevel)** — Hevel Rhai recipes for desktop bootstrap and software-KVM input sharing.
 - 🌰 **[AcornOS](https://github.com/LevitateOS/AcornOS)** — Alpine-based distribution with OpenRC, musl, and busybox
-- 🎮 **[rbee-keeper](https://github.com/rbee-keeper/rbee/tree/main/bin/00_rbee_keeper)** — Thin HTTP client (CLI + Tauri GUI) that manages queen lifecycle
 - 🎭 **[@cond8/core](https://github.com/Cond8/core/tree/main/core)** — TypeScript workflow framework with actor-director architecture
 - 🏗️ **[distro-builder](https://github.com/LevitateOS/distro-builder)** — Shared component system and build abstractions for ISO creation
 - 📋 **[distro-spec](https://github.com/LevitateOS/distro-spec)** — Constants for boot entries, partition layouts, user specs, and service management
