@@ -2,11 +2,32 @@
 
 > pronounced: Vinch
 
-<!-- TEAM_007: Added developer profile and project analysis -->
-I’m a systems‑first builder focused on **safety, determinism, and autonomy** across OS tooling, AI infrastructure, and device‑level platforms. My work pairs deep systems engineering (Rust/Go, kernel/virtualization, packaging) with AI‑assisted workflows that stay auditable and reversible.
+I build **systems, developer tools, and AI infrastructure**, with a growing focus on programming languages for AI coding agents. My work spans Linux distributions, shared development environments, Rust and Go tooling, local inference, ComfyUI workflows, and the interfaces that make these systems usable.
+
+I care about explicit contracts, immutable data, and implementations that reuse proven runtime capabilities. I use AI coding agents throughout my workflow, while treating their suggestions—and my own design decisions—as things to test and challenge.
 
 ## Projects
 
+- 🧠 **[Can](https://github.com/veighnsche/can-lang)** — Programming language in development for AI coding agents, with immutable data and native probabilistic judgments, targeting TypeScript on Bun.
+- 🥤 **[SodaOS](https://github.com/LevitateOS/sodaos)** — Shared, persistent development environments on Fedora CoreOS, combining Forgejo, a Go access API, SSH, and project containers.
+- 🌐 **[Soda OS website](https://github.com/LevitateOS/soda-os-website)** — Marketing and documentation site built with React, RedwoodSDK, and Cloudflare Workers.
+- ⚡ **[Flashwhip](https://github.com/veighnsche/flashwhip)** — Go terminal AI assistant with Ollama/OpenAI-compatible endpoints, interactive sessions, and file, shell, and Git tooling.
+- 📋 **[issue-foundry](https://github.com/veighnsche/issue-foundry)** — Early tooling for generating clean-room issue backlogs; the current planning flow validates input and inventories repository snapshots.
+- 📥 **[Comfy Model Web](https://github.com/veighnsche/comfy-model-web)** — Web UI for downloading models directly onto a ComfyUI machine, including Hugging Face URL handling and basic safetensors validation.
+- 🎨 **[Car Engine Pet](https://github.com/veighnsche/car-engine-pet-comfyui)** — ComfyUI custom nodes for regional sampling, step windows, masks, and deterministic seed experiments with SDXL Turbo.
+- 📊 **[fan-dashboard](https://github.com/veighnsche/fan-dashboard)** — Local web dashboard for CPU, memory, storage, NVIDIA GPU telemetry, and Linux fan sensors.
+- 🌡️ **[supermicro-fan-control](https://github.com/veighnsche/supermicro-fan-control)** — Temperature-based IPMI fan control for the Supermicro X11SSH-F, with systemd service integration.
+- 🎮 **[Survivors Prototype](https://github.com/veighnsche/survivors-prototype)** — Godot/GDScript horde-survivor game prototype with auto-attacks, experience, and upgrade choices; gameplay tuning and art remain in progress.
+- 📸 **[qemu-screenshot-mcp](https://github.com/veighnsche/qemu-screenshot-mcp)** — QMP-based VM screenshot tooling for AI agents, including a start, capture, and shutdown workflow.
+- 🪟 **[Hevel II](https://github.com/veighnsche/hevelII)** — Design study for a Rust/Smithay compositor with an independent two-dimensional workspace per display.
+- 💿 **[DriftOS](https://github.com/veighnsche/DriftOS)** — Research and planning for an image-based Linux system using the CentOS/Rocky and bootc ecosystem.
+- ✅ **[distro-contract](https://github.com/LevitateOS/distro-contract)** — Conformance schemas and validation for distribution declarations, build provenance, and checkpoint artifacts.
+- 🔄 **[recab](https://github.com/LevitateOS/recab)** — A/B slot management with trial boots, commit, and rollback using systemd-boot.
+- 💽 **[recpart](https://github.com/LevitateOS/recpart)** — Partition-planning and apply-backend project for immutable A/B and mutable installation layouts.
+- 🛡️ **[recguard](https://github.com/LevitateOS/recguard)** — Draft policy and conformance design for installed-system mutability modes.
+- 📦 **[stage3](https://github.com/LevitateOS/stage3)** — Base-system archive builder for installation payloads.
+- 🔗 **[leviso-deps](https://github.com/LevitateOS/leviso-deps)** — Downloads, resolves, and caches distribution-build dependencies with hash validation.
+- 🖥️ **[TUI workspace](https://github.com/LevitateOS/tui-root)** — Scaffold for shared terminal UI components and installation applications.
 - 🚀 **[LevitateOS](https://github.com/LevitateOS/LevitateOS)** — Linux distro with Rhai packaging, local AI, and atomic A/B updates.
 - 📱 **[Pocket-Relay](https://github.com/veighnsche/Pocket-Relay)** — Flutter phone client for remote Codex sessions over SSH.
 - 🤖 **[ralph4days](https://github.com/veighnsche/ralph4days)** — Tauri workspace for Claude tasks, prompts, and terminal execution.
@@ -83,20 +104,24 @@ I’m a systems‑first builder focused on **safety, determinism, and autonomy**
 - 🥒 **[cukerust](https://github.com/veighnsche/cukerust)** — Zero-config Gherkin × Rust BDD extension for VS Code
 
 **Core strengths**
+- Language and API design for AI coding agents, with native typed judgments
 - Systems architecture with strong safety/rollback primitives
 - Linux distro + package engineering, immutable workflows, and build pipelines
 - AI infrastructure that is self‑hosted, offline‑capable, and composable
 - Device‑level security/virtualization (Android kernels, AVF, microVMs)
 
 **Typical stack**
-- Rust, Go, Python, TypeScript
+- Rust, Go, Python, TypeScript, GDScript
 - Linux / Nix / Fedora Atomic / Arch
 - Containers, microVMs, QEMU, ADB/fastboot
 
 ## Project Analysis
 
-Across the projects below, the through‑line is **intentional automation with guardrails**—build systems and infra that are powerful but always reversible.
+Across these projects, the recurring interests are systems infrastructure, developer tooling, and making AI capabilities usable through explicit interfaces.
 
+- **Shared development environments**: SodaOS brings Git hosting, access management, persistent project containers, and native development tools together.
+- **Creative and hardware tooling**: ComfyUI sampling experiments, model-download utilities, fan telemetry, and a Godot game prototype extend the work beyond infrastructure.
+- **Language design for AI agents**: Can explores how probabilistic judgments, immutable data, error handling, and executable assertions can fit into one language.
 - **Safety‑first system mutation**: Switchyard‑fs and oxidizr‑arch show a consistent pattern of atomic changes, policy gates, and rollback.
 - **Self‑hosted AI infrastructure**: rbee emphasizes orchestration, multi‑GPU scheduling, and OpenAI‑compatible APIs without cloud lock‑in.
 - **OS‑level product building**: LevitateOS and Tanzanite combine distro engineering with developer‑first ergonomics and offline workflows.
